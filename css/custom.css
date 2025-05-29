@@ -1,0 +1,362 @@
+/* Navbar Styles */
+.navbar,
+.navbar * {
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+    color: #1A76D1 !important;
+}
+
+.nav-link.active {
+    color: #1A76D1 !important;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #1A76D1;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: white !important;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar-nav {
+        margin-bottom: 1rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0;
+    }
+
+    .nav-link.active::after {
+        display: none;
+    }
+}
+
+/* Carousel Styles */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.single-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dealer Card Styles */
+.dealer-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.dealer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.dealer-card img {
+    max-height: 100px;
+    object-fit: contain;
+}
+
+/* Carousel Navigation */
+.custom-arrow {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.custom-arrow:hover {
+    opacity: 1;
+    background: #1A76D1;
+}
+
+.custom-indicators {
+    bottom: -40px;
+}
+
+.custom-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1A76D1;
+    opacity: 0.5;
+}
+
+.custom-indicators button.active {
+    opacity: 1;
+}
+
+/* Product Card Styles */
+.product-card {
+    border: 1.5px solid #1A76D1;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(26, 118, 209, 0.07);
+    background: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    box-shadow: 0 6px 24px rgba(26, 118, 209, 0.15);
+}
+
+.product-img-container {
+    position: relative;
+    background: #f8f9fa;
+    padding: 18px 18px 0 18px;
+    text-align: center;
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    color: #e53935;
+    font-size: 22px;
+    z-index: 2;
+}
+
+.product-card-body {
+    padding: 18px 18px 16px 18px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.btn-read-more {
+    background: #1A76D1;
+    color: #fff;
+    border-radius: 22px;
+    padding: 6px 18px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    margin-left: 8px;
+    transition: background 0.2s;
+}
+
+.btn-read-more:hover {
+    background: #155a9c;
+    color: #fff;
+}
+
+/* Feature Box Styles */
+.feature-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+.feature-box h5 {
+    transition: color 0.3s ease;
+}
+
+.feature-box:hover h5 {
+    color: #1A76D1 !important;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1A76D1;
+    color: white;
+}
+
+.footer-item h4 {
+    position: relative;
+    padding-bottom: 15px;
+    color: rgb(255, 255, 255) !important;
+}
+
+.footer-item h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #1A76D1;
+}
+
+.hover-primary {
+    transition: color 0.3s ease;
+}
+
+.hover-primary:hover {
+    color: #1A76D1 !important;
+}
+
+/* Gallery Styles */
+.gallery-item {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+.gallery-img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+    border-color: #1A76D1;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.scrolling-gallery-images {
+    display: flex;
+    width: calc(250px * 6);
+    animation: scroll 15s linear infinite;
+}
+
+/* Social Media Button Styles */
+.btn-social:hover {
+    background-color: #1A76D1 !important;
+    transform: translateY(-3px);
+}
+
+/* Chat Button Styles */
+.contact-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.chatbox-btn {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #015fc9;
+    color: white;
+    border: none;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-option {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-option:hover, .chatbox-btn:hover {
+    background-color: #001f3f;
+}
+
+.d-none {
+    display: none;
+}
+
+/* Back to Top Button */
+.back-to-top:hover {
+    border: 2px solid white !important;
+}
+
+.chatbox-btn:hover {
+    border: 2px solid white;
+}
+
+.contact-option:hover {
+    border: 2px solid white;
+} 
